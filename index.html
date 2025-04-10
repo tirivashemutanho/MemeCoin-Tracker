@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonGu - The Memecoin to the Moon!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌕 MoonGu (MOONGU)</h1>
+            <p>The Memecoin to the Moon and Beyond!</p>
+            <button id="launchButton" class="btn">Launch to the Moon</button>
+            
+            <div class="buy-section">
+                <button class="how-to-buy-btn" onclick="toggleBuyInfo()">
+                    <span class="pulse"></span>
+                    How to Buy MOONGU
+                </button>
+                
+                <div class="buy-info" id="buyInfo">
+                    <div class="buy-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Create Wallet</h3>
+                                <p>Download and install Trust Wallet or Metamask</p>
+                                <div class="wallet-buttons">
+                                    <a href="https://trustwallet.com/" target="_blank" class="wallet-btn">
+                                        <img src="path/to/trust-wallet-icon.png" alt="Trust Wallet">
+                                        Trust Wallet
+                                    </a>
+                                    <a href="https://metamask.io/" target="_blank" class="wallet-btn">
+                                        <img src="path/to/metamask-icon.png" alt="Metamask">
+                                        Metamask
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Get BNB</h3>
+                                <p>Purchase BNB to swap for MOONGU</p>
+                                <button class="copy-btn" onclick="copyToClipboard('bnb-address')">
+                                    Copy BNB Smart Chain Address
+                                </button>
+                                <span id="bnb-address" class="wallet-address">0x123...abc</span>
+                            </div>
+                        </div>
+    
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Swap for MOONGU</h3>
+                                <p>Visit PancakeSwap to swap BNB for MOONGU</p>
+                                <div class="contract-address">
+                                    <span>Contract Address:</span>
+                                    <button class="copy-btn" onclick="copyToClipboard('moongu-address')">
+                                        Copy MOONGU Address
+                                    </button>
+                                    <span id="moongu-address" class="wallet-address">0xMOONGU...xyz</span>
+                                </div>
+                                <a href="https://pancakeswap.finance/" target="_blank" class="pancakeswap-btn">
+                                    <img src="path/to/pancakeswap-icon.png" alt="PancakeSwap">
+                                    Trade on PancakeSwap
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About MoonGu</h2>
+            <p>MoonGu is a unique memecoin on the Pump.fun platform, aiming to take its holders on a thrilling ride to the moon and beyond. With a focus on community engagement and fun, MoonGu aims to foster a vibrant and inclusive ecosystem.</p>
+        </div>
+    </section>
+
+    <section id="tokenomics">
+        <div class="container">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics-chart">
+                <div class="tokenomics-item">
+                    <span>Initial Liquidity</span>
+                    <div class="bar" data-percentage="50"></div>
+                    <span class="percentage">50%</span>
+                </div>
+                <div class="tokenomics-item">
+                    <span>Marketing & Development</span>
+                    <div class="bar" data-percentage="30"></div>
+                    <span class="percentage">30%</span>
+                </div>
+                <div class="tokenomics-item">
+                    <span>Team & Advisors</span>
+                    <div class="bar" data-percentage="20"></div>
+                    <span class="percentage">20%</span>
+                </div>
+                <div class="tokenomics-item">
+                    <span>Redistributed to Holders</span>
+                    <div class="bar" data-percentage="5"></div>
+                    <span class="percentage">5%</span>
+                </div>
+                <div class="tokenomics-item">
+                    <span>Added to Liquidity</span>
+                    <div class="bar" data-percentage="5"></div>
+                    <span class="percentage">5%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketing">
+        <div class="container">
+            <h2>Marketing Methods</h2>
+            <div class="marketing-grid">
+                <div class="marketing-item">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Social Media</h3>
+                    <p>Engage with the community on platforms like Twitter, Telegram, and Discord.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="marketing-item">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Influencer Partnerships</h3>
+                    <p>Collaborate with popular crypto influencers to reach a wider audience.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="marketing-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Building</h3>
+                    <p>Organize events, giveaways, and AMAs to foster a strong community.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="marketing-item">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Targeted Advertising</h3>
+                    <p>Use targeted advertising on social media and crypto-related websites.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="marketing-item">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Cross-Platform Promotion</h3>
+                    <p>Promote MoonGu on platforms like Reddit and 4chan to tap into meme culture.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="marketing-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Community-Driven Marketing</h3>
+                    <p>Empower the community to create and share marketing materials.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="social-media">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <div class="social-links">
+                <a href="https://twitter.com/your_twitter_handle" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i> Follow us on Twitter
+                </a>
+                <a href="https://t.me/your_telegram_channel" target="_blank" class="social-link telegram">
+                    <i class="fab fa-telegram-plane"></i> Join our Telegram Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MoonGu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
